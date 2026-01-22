@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasty Bites | Restaurant Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff6b6b, #ff9f43);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ff6b6b;
+      font-size: 2.2rem;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .menu-item {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .menu-content {
+      padding: 15px;
+    }
+
+    .menu-content h3 {
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .menu-content p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #ff6b6b;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    footer span {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tasty Bites</h1>
+    <p>Delicious Food • Fresh Ingredients • Great Taste</p>
+  </header>
+
+  <!-- Starters -->
+  <section>
+    <h2>Starters</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="paneer tikka.jpg" alt="Paneer Tikka">
+        <div class="menu-content">
+          <h3>Paneer Tikka</h3>
+          <p>Grilled cottage cheese marinated with spices.</p>
+          <div class="price">₹220</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1628294895950-9805252327bc" alt="Veg Spring Rolls">
+        <div class="menu-content">
+          <h3>Veg Spring Rolls</h3>
+          <p>Crispy rolls stuffed with fresh vegetables.</p>
+          <div class="price">₹180</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Course -->
+  <section>
+    <h2>Main Course</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="paneer butter masala.jpg" alt="Butter Paneer">
+        <div class="menu-content">
+          <h3>Paneer Butter Masala</h3>
+          <p>Rich creamy tomato gravy with soft paneer.</p>
+          <div class="price">₹320</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="veg biryani.jpg" alt="Veg Biryani">
+        <div class="menu-content">
+          <h3>Veg Biryani</h3>
+          <p>Aromatic rice cooked with vegetables & spices.</p>
+          <div class="price">₹280</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Desserts -->
+  <section>
+    <h2>Desserts</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c" alt="Chocolate Cake">
+        <div class="menu-content">
+          <h3>Chocolate Cake</h3>
+          <p>Moist chocolate cake topped with ganache.</p>
+          <div class="price">₹150</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="vanilla ice cream.jpg" alt="Ice Cream">
+        <div class="menu-content">
+          <h3>Vanilla Ice Cream</h3>
+          <p>Classic vanilla scoop with chocolate syrup.</p>
+          <div class="price">₹120</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 <span>Tasty Bites Restaurant</span> | Designed with ❤</p>
+  </footer>
+
+</body>
+</html>
